@@ -1,0 +1,11 @@
+/* src/styles/main.css */
+
+/* Custom styles for your data visualization */
+.chart {
+    margin: 20px;
+  }
+  
+  .usa-fill-primary {
+    fill: #0071bc; /* Example primary color from USWDS */
+  }
+  
