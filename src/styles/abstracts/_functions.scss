@@ -24,3 +24,8 @@
   @function font-scale($font-name) {
     @return map-get($font-scales, $font-name);
   }
+
+  // Function to get letter spacing
+@function letter-spacing($font-name) {
+    @return map-get($font-letterspacing, $font-name);
+  }

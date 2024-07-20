@@ -74,3 +74,11 @@ $font-scales: (
   'Tesla Slab': 1.0764,     // Scale factor for Tesla Slab
   'Pscher': 0.9298          // Scale factor for Pscher
 );
+
+// Font letterspacing
+$font-letterspacing: (
+  'Public Sans': 0,       // No letter spacing adjustment for baseline
+  'Copernicus': -0.02em,  // Example negative letter spacing for Copernicus
+  'Tesla Slab': 0.01em,   // Example positive letter spacing for Tesla Slab
+  'Pscher': 0       // Example negative letter spacing for Pscher
+);

@@ -3,9 +3,11 @@
     $scale-factor: font-scale($font-name);
     $font-size: font-size($size-type);
     $computed-font-size: $font-size * $scale-factor;
+    $letter-spacing: letter-spacing($font-name);
     
     font-family: $font-name;
-    font-size: #{$computed-font-size}; // Append rem unit after calculation
+    font-size: #{$computed-font-size};
     line-height: line-height($size-type);
     font-weight: font-weight($weight);
+    letter-spacing: $letter-spacing; // Apply letter spacing
   }

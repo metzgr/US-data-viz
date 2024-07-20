@@ -30,17 +30,17 @@
 
 .display-medium-copernicus {
   @extend .font-copernicus;
-  @include normalize-font('Copernicus', 'display-medium', 'bold');
+  @include normalize-font('Copernicus', 'display-medium', 'light');
 }
 
 .display-small-copernicus {
   @extend .font-copernicus;
-  @include normalize-font('Copernicus', 'display-small', 'bold');
+  @include normalize-font('Copernicus', 'display-small', 'light');
 }
 
 .display-xsmall-copernicus {
   @extend .font-copernicus;
-  @include normalize-font('Copernicus', 'display-xsmall', 'bold');
+  @include normalize-font('Copernicus', 'display-xsmall', 'light');
 }
 
 .display-large-tesla-slab {
