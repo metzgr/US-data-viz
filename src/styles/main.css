@@ -1,11 +1,21 @@
 /* src/styles/main.css */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
 
-/* Custom styles for your data visualization */
-.chart {
-    margin: 20px;
-  }
-  
-  .usa-fill-primary {
-    fill: #0071bc; /* Example primary color from USWDS */
-  }
-  
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.okr-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
