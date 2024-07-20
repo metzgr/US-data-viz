@@ -1,21 +1,17 @@
 /* src/styles/main.css */
-.App {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
+
+/* Truncate single-line text */
+.pgov-metric-card .usa-card__heading {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.okr-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  width: 400px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+/* Truncate multi-line text */
+.pgov-metric-card .usa-card__body p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

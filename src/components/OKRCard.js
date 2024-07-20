@@ -1,7 +1,8 @@
 // src/components/OKRCard.js
 import React from 'react';
-import BarChart from './BarChart';
+import ProgressBarChart from './ProgressBarChart';
 import LineChart from './LineChart';
+import SparklineChart from './SparklineChart';
 
 const OKRCard = ({ target }) => {
   const progressData = {
@@ -11,16 +12,21 @@ const OKRCard = ({ target }) => {
   };
 
   return (
-    <div className="okr-card">
-      <h3>{target.title}</h3>
-      <p>{target.description}</p>
-      <div>
-        <h4>Progress</h4>
-        <BarChart data={progressData} />
-      </div>
-      <div>
-        <h4>Indicator Over Time</h4>
-        <LineChart data={target.progress} />
+    <div className="usa-card pgov-metric-card display-flex flex-column flex-justify-between height-full">
+      <div className="usa-card__container display-flex flex-column flex-justify-between height-full">
+        <div className="usa-card__header">
+          <h3 className="usa-card__heading">{target.title}</h3>
+        </div>
+        <div className="usa-card__body">
+          <p>{target.description}</p>
+          <div className="usa-prose">
+            <h4>Progress</h4>
+            <ProgressBarChart data={progressData} />
+          </div>
+          <div className="usa-prose">
+            <SparklineChart data={target.progress} />
+          </div>
+        </div>
       </div>
     </div>
   );

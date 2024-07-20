@@ -7,14 +7,14 @@ const LineChart = ({ data }) => {
 
   useEffect(() => {
     const svg = d3.select(ref.current)
-      .attr('width', 400)
-      .attr('height', 200);
+      .attr('viewBox', `0 0 400 200`) // Use viewBox for responsiveness
+      .attr('preserveAspectRatio', 'xMinYMin meet'); // Preserve aspect ratio
 
     svg.selectAll("*").remove(); // Clear previous render
 
     const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-    const width = +svg.attr('width') - margin.left - margin.right;
-    const height = +svg.attr('height') - margin.top - margin.bottom;
+    const width = 400 - margin.left - margin.right;
+    const height = 200 - margin.top - margin.bottom;
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
     const x = d3.scaleBand()
@@ -46,7 +46,7 @@ const LineChart = ({ data }) => {
         .y(d => y(d.value)));
   }, [data]);
 
-  return <svg ref={ref}></svg>;
+  return <svg ref={ref} className="chart-svg"></svg>;
 };
 
 export default LineChart;
