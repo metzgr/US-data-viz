@@ -1,0 +1,77 @@
+// _typography.scss
+
+// Typography classes for display
+.display-large {
+  @include normalize-font('Public Sans', 'display-large', 'bold');
+}
+
+.display-medium {
+  @include normalize-font('Public Sans', 'display-medium', 'bold');
+}
+
+.display-small {
+  @include normalize-font('Public Sans', 'display-small', 'bold');
+}
+
+.display-xsmall {
+  @include normalize-font('Public Sans', 'display-xsmall', 'bold');
+}
+
+// Typography classes for headings
+.heading-xxlarge {
+  @include normalize-font('Public Sans', 'heading-xxlarge', 'bold');
+}
+
+.heading-xlarge {
+  @include normalize-font('Public Sans', 'heading-xlarge', 'semibold');
+}
+
+.heading-large {
+  @include normalize-font('Public Sans', 'heading-large', 'semibold');
+}
+
+.heading-medium {
+  @include normalize-font('Public Sans', 'heading-medium', 'semibold');
+}
+
+.heading-small {
+  @include normalize-font('Public Sans', 'heading-small', 'semibold');
+}
+
+.heading-xsmall {
+  @include normalize-font('Public Sans', 'heading-xsmall', 'semibold');
+}
+
+// Typography classes for labels
+.label-large {
+  @include normalize-font('Public Sans', 'label-large', 'medium');
+}
+
+.label-medium {
+  @include normalize-font('Public Sans', 'label-medium', 'medium');
+}
+
+.label-small {
+  @include normalize-font('Public Sans', 'label-small', 'medium');
+}
+
+.label-xsmall {
+  @include normalize-font('Public Sans', 'label-xsmall', 'medium');
+}
+
+// Typography classes for paragraphs
+.paragraph-large {
+  @include normalize-font('Public Sans', 'paragraph-large', 'regular');
+}
+
+.paragraph-medium {
+  @include normalize-font('Public Sans', 'paragraph-medium', 'regular');
+}
+
+.paragraph-small {
+  @include normalize-font('Public Sans', 'paragraph-small', 'regular');
+}
+
+.paragraph-xsmall {
+  @include normalize-font('Public Sans', 'paragraph-xsmall', 'regular');
+}

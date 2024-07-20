@@ -1,0 +1,8 @@
+// Mixin to normalize font sizes
+@mixin normalize-font($font-name, $size-type, $weight) {
+    $scale-factor: font-scale($font-name);
+    font-family: $font-name;
+    font-size: calc(font-size($size-type) * #{$scale-factor});
+    line-height: line-height($size-type);
+    font-weight: font-weight($weight);
+  }

@@ -1,0 +1,152 @@
+// Official Font Specification
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-Book.woff2") format("woff2"),
+    url("./assets/fonts/copernicus/CopernicusV2-Book.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-BookItalic.woff2") format("woff2"),
+    url("./assets/fonts/copernicus/CopernicusV2-BookItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-Semibold.woff2") format("woff2"),
+    url("./assets/fonts/copernicus/CopernicusV2-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-SemiboldItalic.woff2") format("woff2"),
+    url("./assets/fonts/copernicus/CopernicusV2-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copernicus";
+  src: url("./assets/fonts/copernicus/CopernicusV2-Extrabold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pscher";
+  src: url("./assets/fonts/gp-thin-slab/GPThinSlab.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tesla Slab";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001658-1810c002b27f55a06a40837a86337578.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001658-1810c002b27f55a06a40837a86337578.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tesla Slab";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001662-2200d087da0900b904a8e10d1e2972ba.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001662-2200d087da0900b904a8e10d1e2972ba.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*
+* Webfonts served by typotheque.com
+*
+* To make the font files as small as possible,
+* most glyphs and OpenType features were removed.
+* To edit the fonts, add more language support,
+* log it to your Typotheque account:
+* http://www.typotheque.com/my_account/webfonts
+*
+* The Typotheque Font Software is protected under domestic
+* and international trademark and copyright law.
+* Modifying, reverse engineering or otherwise copying
+* of Typotheque Font Software is illegal.
+* http://www.typotheque.com/licensing/
+*
+* (c) 2021, Typotheque
+* Generated: 2021-11-02 14:59:36
+*/
+
+@font-face {
+  font-family: "Tesla Slab Light";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001656-b4241989c44f1990a96cf06d6d1baa83.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001656-b4241989c44f1990a96cf06d6d1baa83.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Tesla Slab Light Italic";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001657-324ad4f2e8c7a9deebb706f1ec81da11.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001657-324ad4f2e8c7a9deebb706f1ec81da11.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Tesla Slab Regular 2";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001658-1810c002b27f55a06a40837a86337578.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001658-1810c002b27f55a06a40837a86337578.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Tesla Slab Regular Italic 2";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001659-49d819abc394ec83b24320361d91b6c4.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001659-49d819abc394ec83b24320361d91b6c4.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Tesla Slab Bold 2";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001662-2200d087da0900b904a8e10d1e2972ba.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001662-2200d087da0900b904a8e10d1e2972ba.woff") format("woff");
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Tesla Slab Bold Italic 2";
+  src: url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001663-c0c4e4b560a086eb371055f310e3b7c8.woff2") format("woff2"), url("https://s3-us-west-1.amazonaws.com/fonts-california.typotheque.com/WF-037228-011755-001663-c0c4e4b560a086eb371055f310e3b7c8.woff") format("woff");
+  font-display: auto;
+}

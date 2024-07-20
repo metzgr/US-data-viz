@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import OKRCard from './components/OKRCard';
-import './styles/main.css';
+import './styles/main.scss';
 
 const App = () => {
   const [data, setData] = useState([]);
