@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>OKR Dashboard</h1>
+      <h1 className="display-large-copernicus">OKR Dashboard</h1>
       <div className="grid-container-widescreen">
         <div className="grid-row">
           {data.map(target => (

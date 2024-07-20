@@ -4,23 +4,23 @@
 @function spacing($size) {
     @return map-get($spacing-core-sizes, $size);
   }
-
-// Function to get font size
-@function font-size($type) {
+  
+  // Function to get font size (return numeric value)
+  @function font-size($type) {
     @return map-get($font-sizes, $type);
   }
   
-// Function to get line height
-@function line-height($type) {
+  // Function to get line height
+  @function line-height($type) {
     @return map-get($line-heights, $type);
   }
   
-// Function to get font weight
-@function font-weight($weight) {
+  // Function to get font weight
+  @function font-weight($weight) {
     @return map-get($font-weights, $weight);
   }
   
-// Function to get font scale
-@function font-scale($font-name) {
+  // Function to get font scale
+  @function font-scale($font-name) {
     @return map-get($font-scales, $font-name);
   }

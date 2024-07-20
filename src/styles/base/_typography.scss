@@ -1,77 +1,357 @@
 // _typography.scss
 
-// Typography classes for display
-.display-large {
+// Combine utility classes for specific font styles
+
+// Display
+.display-large-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'display-large', 'bold');
 }
 
-.display-medium {
+.display-medium-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'display-medium', 'bold');
 }
 
-.display-small {
+.display-small-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'display-small', 'bold');
 }
 
-.display-xsmall {
+.display-xsmall-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'display-xsmall', 'bold');
 }
 
-// Typography classes for headings
-.heading-xxlarge {
+.display-large-copernicus {
+    @extend .font-copernicus;
+    @include normalize-font('Copernicus', 'display-large', 'light');
+  }
+
+.display-medium-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'display-medium', 'bold');
+}
+
+.display-small-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'display-small', 'bold');
+}
+
+.display-xsmall-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'display-xsmall', 'bold');
+}
+
+.display-large-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'display-large', 'bold');
+}
+
+.display-medium-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'display-medium', 'bold');
+}
+
+.display-small-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'display-small', 'bold');
+}
+
+.display-xsmall-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'display-xsmall', 'bold');
+}
+
+.display-large-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'display-large', 'bold');
+}
+
+.display-medium-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'display-medium', 'bold');
+}
+
+.display-small-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'display-small', 'bold');
+}
+
+.display-xsmall-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'display-xsmall', 'bold');
+}
+
+// Headings
+.heading-xxlarge-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'heading-xxlarge', 'bold');
 }
 
-.heading-xlarge {
+.heading-xlarge-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'heading-xlarge', 'semibold');
 }
 
-.heading-large {
+.heading-large-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'heading-large', 'semibold');
 }
 
-.heading-medium {
+.heading-medium-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'heading-medium', 'semibold');
 }
 
-.heading-small {
+.heading-small-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'heading-small', 'semibold');
 }
 
-.heading-xsmall {
+.heading-xsmall-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'heading-xsmall', 'semibold');
 }
 
-// Typography classes for labels
-.label-large {
+.heading-xxlarge-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'heading-xxlarge', 'bold');
+}
+
+.heading-xlarge-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'heading-xlarge', 'semibold');
+}
+
+.heading-large-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'heading-large', 'semibold');
+}
+
+.heading-medium-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'heading-medium', 'semibold');
+}
+
+.heading-small-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'heading-small', 'semibold');
+}
+
+.heading-xsmall-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'heading-xsmall', 'semibold');
+}
+
+.heading-xxlarge-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'heading-xxlarge', 'bold');
+}
+
+.heading-xlarge-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'heading-xlarge', 'semibold');
+}
+
+.heading-large-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'heading-large', 'semibold');
+}
+
+.heading-medium-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'heading-medium', 'semibold');
+}
+
+.heading-small-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'heading-small', 'semibold');
+}
+
+.heading-xsmall-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'heading-xsmall', 'semibold');
+}
+
+.heading-xxlarge-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'heading-xxlarge', 'bold');
+}
+
+.heading-xlarge-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'heading-xlarge', 'semibold');
+}
+
+.heading-large-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'heading-large', 'semibold');
+}
+
+.heading-medium-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'heading-medium', 'semibold');
+}
+
+.heading-small-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'heading-small', 'semibold');
+}
+
+.heading-xsmall-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'heading-xsmall', 'semibold');
+}
+
+// Labels
+.label-large-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'label-large', 'medium');
 }
 
-.label-medium {
+.label-medium-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'label-medium', 'medium');
 }
 
-.label-small {
+.label-small-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'label-small', 'medium');
 }
 
-.label-xsmall {
+.label-xsmall-public-sans {
+  @extend .font-public-sans;
   @include normalize-font('Public Sans', 'label-xsmall', 'medium');
 }
 
-// Typography classes for paragraphs
-.paragraph-large {
-  @include normalize-font('Public Sans', 'paragraph-large', 'regular');
+.label-large-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'label-large', 'medium');
 }
 
-.paragraph-medium {
-  @include normalize-font('Public Sans', 'paragraph-medium', 'regular');
+.label-medium-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'label-medium', 'medium');
 }
 
-.paragraph-small {
-  @include normalize-font('Public Sans', 'paragraph-small', 'regular');
+.label-small-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'label-small', 'medium');
 }
 
-.paragraph-xsmall {
-  @include normalize-font('Public Sans', 'paragraph-xsmall', 'regular');
+.label-xsmall-copernicus {
+  @extend .font-copernicus;
+  @include normalize-font('Copernicus', 'label-xsmall', 'medium');
+}
+
+.label-large-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'label-large', 'medium');
+}
+
+.label-medium-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'label-medium', 'medium');
+}
+
+.label-small-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'label-small', 'medium');
+}
+
+.label-xsmall-tesla-slab {
+  @extend .font-tesla-slab;
+  @include normalize-font('Tesla Slab', 'label-xsmall', 'medium');
+}
+
+.label-large-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'label-large', 'medium');
+}
+
+.label-medium-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'label-medium', 'medium');
+}
+
+.label-small-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'label-small', 'medium');
+}
+
+.label-xsmall-pscher {
+  @extend .font-pscher;
+  @include normalize-font('Pscher', 'label-xsmall', 'medium');
+}
+
+// Paragraphs
+.paragraph-large-public-sans {
+@extend .font-public-sans;
+@include normalize-font('Public Sans', 'paragraph-large', 'regular');
+}
+
+.paragraph-medium-public-sans {
+@extend .font-public-sans;
+@include normalize-font('Public Sans', 'paragraph-medium', 'regular');
+}
+
+.paragraph-small-public-sans {
+@extend .font-public-sans;
+@include normalize-font('Public Sans', 'paragraph-small', 'regular');
+}
+
+.paragraph-xsmall-public-sans {
+@extend .font-public-sans;
+@include normalize-font('Public Sans', 'paragraph-xsmall', 'regular');
+}
+
+.paragraph-large-copernicus {
+@extend .font-copernicus;
+@include normalize-font('Copernicus', 'paragraph-large', 'regular');
+}
+
+.paragraph-medium-copernicus {
+@extend .font-copernicus;
+@include normalize-font('Copernicus', 'paragraph-medium', 'regular');
+}
+
+.paragraph-small-copernicus {
+@extend .font-copernicus;
+@include normalize-font('Copernicus', 'paragraph-small', 'regular');
+}
+
+.paragraph-xsmall-copernicus {
+@extend .font-copernicus;
+@include normalize-font('Copernicus', 'paragraph-xsmall', 'regular');
+}
+
+.paragraph-large-tesla-slab {
+@extend .font-tesla-slab;
+@include normalize-font('Tesla Slab', 'paragraph-large', 'regular');
+}
+
+.paragraph-medium-tesla-slab {
+@extend .font-tesla-slab;
+@include normalize-font('Tesla Slab', 'paragraph-medium', 'regular');
+}
+
+.paragraph-small-tesla-slab {
+@extend .font-tesla-slab;
+@include normalize-font('Tesla Slab', 'paragraph-small', 'regular');
+}
+
+.paragraph-xsmall-tesla-slab {
+@extend .font-tesla-slab;
+@include normalize-font('Tesla Slab', 'paragraph-xsmall', 'regular');
+}
+
+.paragraph-large-pscher {
+@extend .font-pscher;
+@include normalize-font('Pscher', 'paragraph-large', 'regular');
+}
+
+.paragraph-medium-pscher {
+@extend .font-pscher;
+@include normalize-font('Pscher', 'paragraph-medium', 'regular');
 }

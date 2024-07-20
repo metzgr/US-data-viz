@@ -1,14 +1,14 @@
 // src/components/OKRCard.js
 import React from 'react';
 import ProgressBarChart from './ProgressBarChart';
-import LineChart from './LineChart';
 import SparklineChart from './SparklineChart';
 
 const OKRCard = ({ target }) => {
   const progressData = {
     start_value: target.start_value,
     current_value: target.current_value,
-    target_value: target.target_value
+    target_value: target.target_value,
+    progress: target.progress
   };
 
   return (
@@ -24,6 +24,7 @@ const OKRCard = ({ target }) => {
             <ProgressBarChart data={progressData} />
           </div>
           <div className="usa-prose">
+            <h4>Indicator Over Time</h4>
             <SparklineChart data={target.progress} />
           </div>
         </div>

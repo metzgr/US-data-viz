@@ -1,14 +1,18 @@
-@import './abstracts/variables';
-@import './abstracts/mixins';
-@import './abstracts/functions';
-@import './base/normalize';
-@import './base/typography';
-@import './base/spacing';
-@import './components/buttons';
+@import './base/normalize';      // Normalize styles
+
+@import './abstracts/variables'; // Import variables first
+@import './abstracts/functions'; // Import functions second
+@import './abstracts/mixins';    // Import mixins third
+
+@import './base/font-families';     // Base font families
+@import './base/typography';     // Base typography styles
+@import './base/spacing';        // Base spacing styles
+
+@import './components/buttons';  // Component styles
 @import './components/cards';
 @import './components/modals';
-@import './layouts/header';
+
+@import './layouts/header';      // Layout styles
 @import './layouts/footer';
-@import './layouts/grid';
-@import './pages/home';
-@import './fonts'; // Import custom fonts
+
+@import './fonts';               // Import custom fonts last
