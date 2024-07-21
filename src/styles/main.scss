@@ -114,7 +114,7 @@ body {
 .navbar-list {
   display: flex;
   list-style: none;
-  margin: 0 16px;
+  margin: 0 20px;
   padding: 0;
 }
 
@@ -222,4 +222,21 @@ body {
 
 .seal-image:hover {
   filter: grayscale(0%);
+}
+
+// Define the hyperlink class
+.hyperlink {
+  text-decoration: none; // No underline by default
+  position: relative;
+  cursor: pointer;
+
+  &:hover::after {
+    content: ''; // Creates the underline content
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; // Adjust the distance from the text
+    height: 1px; // Adjust the thickness of the underline
+    background: #ADCDFF; // Underline color will be the same as text color
+  }
 }

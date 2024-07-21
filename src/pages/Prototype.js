@@ -45,8 +45,8 @@ const Prototype = () => {
 
 <div className="display-flex flex-align-center padding-y-1 padding-x-1 border-top-2px">
 <img src={seal} alt="Seal" class="seal-image margin-right-1 width-5 height-5 border radius-pill border-base"></img>
-<div className="">  <p className="title label-small-public-sans text-ink margin-0">White House</p>
-    <p className="text-gray-60 margin-0"><span className="label-xsmall-public-sans text-bold">Plans</span><span className="text-gray-cool-20 margin-x-05">/</span><span className="label-small-public-sans text-base-dark">National Drug Control Strategy</span></p></div>
+<div className="">  <p className="title label-small-public-sans text-ink margin-0"><span className="hyperlink">White House</span></p>
+    <p className="text-gray-60 margin-0"><span className="label-xsmall-public-sans text-bold hyperlink">Plans</span><span className="text-gray-cool-20 margin-x-05">/</span><span className="label-small-public-sans text-base-dark hyperlink text-normal">National Drug Control Strategy</span></p></div>
 </div>
 
 
