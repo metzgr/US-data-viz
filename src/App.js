@@ -43,12 +43,12 @@ const App = () => {
   );
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/prototype" element={<Prototype />} />
-      </Routes>
-    </Router>
+<Router basename="/US-data-viz">
+  <Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/prototype" element={<Prototype />} />
+  </Routes>
+</Router>
   );
 };
 
