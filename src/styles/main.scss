@@ -34,6 +34,10 @@ body.dark-theme {
   @include apply-theme($dark-theme-colors);
 }
 
+.text-semibold {
+  font-weight: 600;
+}
+
 // Add the prototype styles
 .prototype-page {
   display: flex;
