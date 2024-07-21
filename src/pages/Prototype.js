@@ -59,7 +59,7 @@ const Prototype = () => {
   <span className="object__type label-xmedium-public-sans bg-white padding-x-1 padding-y-2px text-bold radius-pill text-ink">GOAL</span>
   <span className="text-no-wrap label-small-public-sans text-gray-cool-30">1<span className="margin-x-2px">/</span>7</span>
 </div>
-            <h1 className="heading-xlarge-copernicus text-uppercase text-gray-cool-1 margin-bottom-105 margin-top-205">Illicit substance use is reduced in the United States</h1>
+            <h1 className="heading-xlarge-copernicus text-uppercase text-gray-cool-1 margin-bottom-1 margin-top-205">Illicit substance use is reduced in the United States</h1>
             <div className="title-card__footer paragraph-xsmall-public-sans text-gray-cool-20">
               <span>197K views</span> • <span>Updated 1 mo ago</span>
             </div>
