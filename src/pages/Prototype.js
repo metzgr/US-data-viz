@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import eagleDataCollage from '../assets/img/artwork/eagle-data@2x.jpg';
 import dropdownIcon from '../assets/img/icon/dropdown-chevron.svg';
 import menuIcon from '../assets/img/icon/hamburger-menu.svg';
+import iphoneStatusBar from '../assets/img/icon/iphone-status-bar.svg';
 import searchIcon from '../assets/img/icon/search.svg';
 import seal from '../assets/img/logo/omb.png';
 import pgovLogo from '../assets/img/logo/pgov.svg';
@@ -28,6 +29,7 @@ const Prototype = () => {
     <div className="prototype-page">
       <div className="phone-container">
         <div className="prototype-body">
+          <div className="text-center margin-top-1"><img src={iphoneStatusBar} alt="Seal" class=""></img></div>
 
         <div className="display-flex flex-justify flex-align-center padding-y-05 padding-x-1">
         <div className="display-flex flex-align-center">
