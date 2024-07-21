@@ -55,7 +55,7 @@ const Prototype = () => {
 
 
           <div className="title-card bg-pgov-black padding-x-2 padding-y-3">
-          <div className="display-flex flex-justify flex-align-center margin-bottom-2">
+          <div className="display-flex flex-justify flex-align-start margin-bottom-2">
   <span className="object__type label-xmedium-public-sans bg-white padding-x-1 padding-y-2px text-bold radius-pill text-ink">GOAL</span>
   <span className="text-no-wrap label-small-public-sans text-gray-cool-30">1<span className="margin-x-2px">/</span>7</span>
 </div>
@@ -109,8 +109,3 @@ const Prototype = () => {
 };
 
 export default Prototype;
-
-<div className="display-flex flex-justify flex-align-center margin-bottom-2">
-  <span className="object__type label-xmedium-public-sans bg-white padding-x-1 padding-y-2px text-bold radius-pill text-ink">GOAL</span>
-  <span className="text-no-wrap label-small-public-sans text-gray-cool-30">1<span className="margin-x-2px">/</span>7</span>
-</div>
