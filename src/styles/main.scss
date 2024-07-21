@@ -44,6 +44,10 @@ body.dark-theme {
   padding: 32px 0; // Add the padding directly to the prototype page
 }
 
+.border-top-3px {
+  border-top: 3px $pgov-black solid !important;
+}
+
 .phone-container {
   width: 430px;
   max-width: 100%; // Ensure it doesn't overflow the viewport on smaller screens
