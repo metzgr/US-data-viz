@@ -58,8 +58,7 @@ body.dark-theme {
 }
 
 .phone-container {
-  width: 430px;
-  max-width: 100%; // Ensure it doesn't overflow the viewport on smaller screens
+  max-width: 430px;
   height: calc(100vh - 64px); // Take the full viewport height minus the padding
   background-color: #fff; // White background for the phone container
   border-radius: 20px; // Optional: rounded corners to resemble a phone
