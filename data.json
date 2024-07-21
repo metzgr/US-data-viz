@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Reduce Unemployment Rate",
+    "description": "Percentage of unemployed individuals",
+    "start_value": 6.0,
+    "target_value": 3.5,
+    "current_value": 4.2,
+    "progress": [
+      {"quarter": "FY22-Q1", "value": 6.0},
+      {"quarter": "FY22-Q2", "value": 5.2},
+      {"quarter": "FY22-Q3", "value": 4.7},
+      {"quarter": "FY22-Q4", "value": 4.2},
+      {"quarter": "FY23-Q1", "value": 3.9},
+      {"quarter": "FY23-Q2", "value": 4.1},
+      {"quarter": "FY23-Q3", "value": 4.3},
+      {"quarter": "FY23-Q4", "value": 4.2}
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Increase High School Graduation Rate",
+    "description": "Percentage of students graduating from high school",
+    "start_value": 75,
+    "target_value": 90,
+    "current_value": 85,
+    "progress": [
+      {"quarter": "FY22-Q1", "value": 75},
+      {"quarter": "FY22-Q2", "value": 77},
+      {"quarter": "FY22-Q3", "value": 80},
+      {"quarter": "FY22-Q4", "value": 83},
+      {"quarter": "FY23-Q1", "value": 86},
+      {"quarter": "FY23-Q2", "value": 88},
+      {"quarter": "FY23-Q3", "value": 87},
+      {"quarter": "FY23-Q4", "value": 85}
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Reduce Poverty Rate",
+    "description": "Percentage of people living below the poverty line",
+    "start_value": 12.0,
+    "target_value": 8.0,
+    "current_value": 10.0,
+    "progress": [
+      {"quarter": "FY22-Q1", "value": 12.0},
+      {"quarter": "FY22-Q2", "value": 11.5},
+      {"quarter": "FY22-Q3", "value": 10.5},
+      {"quarter": "FY22-Q4", "value": 9.5},
+      {"quarter": "FY23-Q1", "value": 10.0},
+      {"quarter": "FY23-Q2", "value": 10.8},
+      {"quarter": "FY23-Q3", "value": 10.2},
+      {"quarter": "FY23-Q4", "value": 10.0}
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Increase Access to Health Insurance",
+    "description": "Percentage of individuals with health insurance",
+    "start_value": 85,
+    "target_value": 95,
+    "current_value": 90,
+    "progress": [
+      {"quarter": "FY22-Q1", "value": 85},
+      {"quarter": "FY22-Q2", "value": 87},
+      {"quarter": "FY22-Q3", "value": 89},
+      {"quarter": "FY22-Q4", "value": 91},
+      {"quarter": "FY23-Q1", "value": 90},
+      {"quarter": "FY23-Q2", "value": 88},
+      {"quarter": "FY23-Q3", "value": 89},
+      {"quarter": "FY23-Q4", "value": 90}
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Reduce Crime Rate",
+    "description": "Number of crimes per 100,000 people",
+    "start_value": 500,
+    "target_value": 300,
+    "current_value": 400,
+    "progress": [
+      {"quarter": "FY22-Q1", "value": 500},
+      {"quarter": "FY22-Q2", "value": 450},
+      {"quarter": "FY22-Q3", "value": 400},
+      {"quarter": "FY22-Q4", "value": 370},
+      {"quarter": "FY23-Q1", "value": 410},
+      {"quarter": "FY23-Q2", "value": 430},
+      {"quarter": "FY23-Q3", "value": 415},
+      {"quarter": "FY23-Q4", "value": 400}
+    ]
+  }
+]
