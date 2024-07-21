@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import OKRCard from './components/OKRCard';
 import Prototype from './pages/Prototype';
 import './styles/main.scss';
@@ -17,7 +17,7 @@ const App = () => {
     const currentHour = new Date().getHours();
     const body = document.body;
 
-    if (currentHour >= 19 || currentHour < 6) { // 7PM to 6AM
+    if (currentHour >= 24 || currentHour < 6) { // 7PM to 6AM
       body.classList.remove('light-theme');
       body.classList.add('dark-theme');
     } else {
@@ -43,12 +43,12 @@ const App = () => {
   );
 
   return (
-<Router basename="/US-data-viz">
-  <Routes>
-    <Route path="/" element={<HomePage />} />
-    <Route path="/prototype" element={<Prototype />} />
-  </Routes>
-</Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/prototype" element={<Prototype />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script type="text/javascript">
+      // Preserve the URL path by redirecting to the index.html page
+      var pathname = window.location.pathname;
+      if (pathname !== '/') {
+        window.location.href = "/#/" + pathname;
+      } else {
+        window.location.href = "/";
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
