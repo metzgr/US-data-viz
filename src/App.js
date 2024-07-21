@@ -17,7 +17,7 @@ const App = () => {
     const currentHour = new Date().getHours();
     const body = document.body;
 
-    if (currentHour >= 24 || currentHour < 24) { // 7PM to 6AM
+    if (currentHour >= 19 || currentHour < 6) { // 7PM to 6AM
       body.classList.remove('light-theme');
       body.classList.add('dark-theme');
     } else {
