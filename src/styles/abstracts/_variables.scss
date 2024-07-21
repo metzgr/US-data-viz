@@ -28,6 +28,7 @@ $font-sizes: (
   'heading-xsmall': 1.25rem,  // 20px
   'label-large': 1.125rem,    // 18px
   'label-medium': 1rem,       // 16px
+  'label-xmedium': 0.938rem,    // 15px
   'label-small': 0.875rem,    // 14px
   'label-xsmall': 0.75rem,    // 12px
   'paragraph-large': 1.125rem,// 18px
@@ -81,4 +82,29 @@ $font-letterspacing: (
   'Copernicus': -0.02em,  // Example negative letter spacing for Copernicus
   'Tesla Slab': 0.01em,   // Example positive letter spacing for Tesla Slab
   'Pscher': 0       // Example negative letter spacing for Pscher
+);
+
+
+$light-theme-colors: (
+  'background': #ffffff,
+  'surface': #f5f5f5,
+  'primary': $pgov-blue-vivid,
+  'secondary': $pgov-lt-blue,
+  'accent': $pgov-navy,
+  'error': $pgov-red,
+  'text-primary': $pgov-black,
+  'text-secondary': $lt-gray-hi-contrast,
+  'text-surface': #ffffff
+);
+
+$dark-theme-colors: (
+  'background': #121212,
+  'surface': #1e1e1e,
+  'primary': $pgov-blue-vivid,
+  'secondary': $pgov-lt-blue,
+  'accent': $pgov-navy,
+  'error': $pgov-red,
+  'text-primary': #ffffff,
+  'text-secondary': $lt-gray-hi-contrast,
+  'text-surface': #121212
 );

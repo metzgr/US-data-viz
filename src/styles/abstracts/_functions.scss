@@ -29,3 +29,8 @@
 @function letter-spacing($font-name) {
     @return map-get($font-letterspacing, $font-name);
   }
+
+// Function to get colors from the theme map
+@function theme-color($theme-map, $name) {
+  @return map-get($theme-map, $name);
+}

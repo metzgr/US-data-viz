@@ -1,8 +1,9 @@
 @import './base/normalize';      // Normalize styles
 
-@import './abstracts/variables'; // Import variables first
-@import './abstracts/functions'; // Import functions second
-@import './abstracts/mixins';    // Import mixins third
+@import './abstracts/colors'; // Import colors first
+@import './abstracts/variables'; // Import variables second
+@import './abstracts/functions'; // Import functions third
+@import './abstracts/mixins';    // Import mixins fourth
 
 @import './base/font-families';     // Base font families
 @import './base/typography';     // Base typography styles
@@ -16,3 +17,209 @@
 @import './layouts/footer';
 
 @import './fonts';               // Import custom fonts last
+
+// Apply light theme by default
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased; /* Standard syntax, may not be necessary */
+}
+
+body.light-theme {
+  @include apply-theme($light-theme-colors);
+}
+
+body.dark-theme {
+  @include apply-theme($dark-theme-colors);
+}
+
+// Add the prototype styles
+.prototype-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px); // Subtract the total margin from the viewport height
+  background-color: #D3D3D3; // Use the pgov-tan color variable
+  padding: 32px 0; // Add the padding directly to the prototype page
+}
+
+.phone-container {
+  width: 430px;
+  max-width: 100%; // Ensure it doesn't overflow the viewport on smaller screens
+  height: calc(100vh - 64px); // Take the full viewport height minus the padding
+  background-color: #fff; // White background for the phone container
+  border-radius: 20px; // Optional: rounded corners to resemble a phone
+  overflow-y: auto; // Make the container scrollable if content overflows
+  display: flex;
+    /* Hide scrollbar for webkit browsers */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /* Hide scrollbar for other browsers */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.prototype-body {
+}
+
+.bg-pgov-black { background-color: $pgov-black !important;
+}
+
+.bg-pgov-red { background-color: $pgov-red !important;
+}
+
+.bg-pgov-navy { background-color: $pgov-navy !important;
+}
+
+.bg-pgov-lt-tan {
+  background-color: $pgov-lt-tan !important;
+}
+
+.bg-pgov-bg-blue {
+  background-color: $pgov-bg-blue !important;
+}
+
+
+.bg-pgov-tan {
+  background-color: $pgov-tan !important;
+}
+
+.text-gray-cool-1 {
+  color: #fbfcfd;
+}
+
+.text-gray-cool-20 {
+  color: #C6CACE;
+}
+
+.text-gray-cool-30 {
+  color: #A9AEB1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #ADCDFF;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0 16px;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0;
+  margin-right: 24px;
+}
+
+.navbar-link {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: -1px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+}
+
+.navbar-link:hover,
+.navbar-item.active .navbar-link {
+  color: #000;
+}
+
+.navbar-item.active .navbar-link::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 4px;
+  background: $pgov-black;
+  margin-top: 8px;
+}
+
+.maxw-264px {
+  max-width: 264px;
+}
+
+/* Styles for the dropcap */
+.dropcap-paragraph {
+  position: relative;
+
+  .dropcap {
+    font-family: 'Pscher';
+    font-size: 3.8rem; /* Adjust the size as needed */
+    float: left;
+    line-height: 1;
+    margin-right: 0.26em;
+    margin-top: 0.04em;
+  }
+
+  
+
+  .more {
+    font-family: "Public Sans";
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 0.25em;
+  }
+
+  &.expanded {
+    -webkit-line-clamp: unset;
+    max-height: none;
+  }
+
+
+}
+
+.period-of-performance .progress-container {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+}
+
+.bg-pgov-gold {
+  background-color: $pgov-gold !important;
+}
+
+.period-of-performance .progress-bar {
+  width: 60%; /* Adjust this width to reflect the progress */
+  height: 100%;
+  background-color: $pgov-lt-blue;
+  margin-top: 12px;
+}
+
+.period-of-performance .date-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: #71767A;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.seal-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.seal-image:hover {
+  filter: grayscale(0%);
+}

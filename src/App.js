@@ -1,6 +1,7 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import OKRCard from './components/OKRCard';
+import Prototype from './pages/Prototype';
 import './styles/main.scss';
 
 const App = () => {
@@ -12,7 +13,20 @@ const App = () => {
       .then(data => setData(data));
   }, []);
 
-  return (
+  useEffect(() => {
+    const currentHour = new Date().getHours();
+    const body = document.body;
+
+    if (currentHour >= 24 || currentHour < 6) { // 7PM to 6AM
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+    } else {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+    }
+  }, []);
+
+  const HomePage = () => (
     <div className="App">
       <h1 className="display-large-copernicus">OKR Dashboard</h1>
       <div className="grid-container-widescreen">
@@ -24,7 +38,17 @@ const App = () => {
           ))}
         </div>
       </div>
+      <Link to="/prototype" className="usa-button">Go to Prototype Page</Link>
     </div>
+  );
+
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/prototype" element={<Prototype />} />
+      </Routes>
+    </Router>
   );
 };
 

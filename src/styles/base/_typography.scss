@@ -91,7 +91,7 @@
 
 .heading-xlarge-public-sans {
   @extend .font-public-sans;
-  @include normalize-font('Public Sans', 'heading-xlarge', 'semibold');
+  @include normalize-font('Public Sans', 'heading-xlarge', 'bold');
 }
 
 .heading-large-public-sans {
@@ -121,7 +121,7 @@
 
 .heading-xlarge-copernicus {
   @extend .font-copernicus;
-  @include normalize-font('Copernicus', 'heading-xlarge', 'semibold');
+  @include normalize-font('Copernicus', 'heading-xlarge', 'bold');
 }
 
 .heading-large-copernicus {
@@ -151,7 +151,7 @@
 
 .heading-xlarge-tesla-slab {
   @extend .font-tesla-slab;
-  @include normalize-font('Tesla Slab', 'heading-xlarge', 'semibold');
+  @include normalize-font('Tesla Slab', 'heading-xlarge', 'bold');
 }
 
 .heading-large-tesla-slab {
@@ -213,6 +213,11 @@
 .label-medium-public-sans {
   @extend .font-public-sans;
   @include normalize-font('Public Sans', 'label-medium', 'medium');
+}
+
+.label-xmedium-public-sans {
+  @extend .font-public-sans;
+  @include normalize-font('Public Sans', 'label-xmedium', 'medium');
 }
 
 .label-small-public-sans {

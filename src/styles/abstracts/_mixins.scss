@@ -11,3 +11,46 @@
     font-weight: font-weight($weight);
     letter-spacing: $letter-spacing; // Apply letter spacing
   }
+
+// Mixin to apply theme colors
+@mixin apply-theme($theme) {
+  background-color: theme-color($theme, 'background');
+  color: theme-color($theme, 'text-primary');
+
+  .surface {
+    background-color: theme-color($theme, 'surface');
+    color: theme-color($theme, 'text-surface');
+  }
+
+  .primary {
+    background-color: theme-color($theme, 'primary');
+    color: theme-color($theme, 'text-primary');
+  }
+
+  .secondary {
+    background-color: theme-color($theme, 'secondary');
+    color: theme-color($theme, 'text-primary');
+  }
+
+  .accent {
+    background-color: theme-color($theme, 'accent');
+    color: theme-color($theme, 'text-primary');
+  }
+
+  .error {
+    background-color: theme-color($theme, 'error');
+    color: theme-color($theme, 'text-primary');
+  }
+
+  .text-primary {
+    color: theme-color($theme, 'text-primary');
+  }
+
+  .text-secondary {
+    color: theme-color($theme, 'text-secondary');
+  }
+
+  .text-surface {
+    color: theme-color($theme, 'text-surface');
+  }
+}
