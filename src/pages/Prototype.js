@@ -31,7 +31,7 @@ const Prototype = () => {
         <div className="prototype-body">
           <div className="text-center margin-top-1"><img src={iphoneStatusBar} alt="Seal" class=""></img></div>
 
-        <div className="display-flex flex-justify flex-align-center padding-y-05 padding-x-1">
+        <div className="display-flex flex-justify flex-align-center padding-y-075 padding-x-1">
         <div className="display-flex flex-align-center">
 <img src={menuIcon} alt="Seal" class="margin-right-05 width-4"></img>
 <div><img src={searchIcon} alt="Seal" class="width-4"></img></div>
